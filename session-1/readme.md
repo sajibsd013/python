@@ -3,7 +3,7 @@
 ## Table of Contents
 
 1. [Introduction to Python](#1-introduction-to-python)
-2. [Downloading and Installing Python](#2-downloading-and-installing-python)
+2. [Downloading and Installing Python and Pycharm](#2-downloading-and-installing-python-and-pycharm)
 3. [Python IDLE: Shell, Editor, and Debugger](#3-python-idle-shell-editor-and-debugger)
 4. [Coding and Debugging](#4-coding-and-debugging)
 
@@ -30,7 +30,7 @@ In this section, we'll introduce you to:
 - **Interpreted Language:** You can run Python code line by line, making it easy to test and debug.
 - **Extensive Libraries:** Python has a vast collection of libraries for various domains like data science, web development, and automation.
   
-## 2. Downloading and Installing Python
+## 2. Downloading and Installing Python and Pycharm
 
 To write and run Python programs, you'll need to install Python on your computer.
 
@@ -53,6 +53,8 @@ Python comes with its own Integrated Development and Learning Environment (IDLE)
 - **Python Shell**: A place where you can enter and run Python commands interactively.
 - **Editor**: A text editor for writing and saving Python scripts.
 - **Debugger**: A tool to help identify and fix errors in your code.
+
+
 
 ## 4. Coding and Debugging
 
