@@ -96,7 +96,7 @@ print("Is Python fun?", is_python_fun)
 
 ### Task 1: Personalized Greeting
 Write a Python program that asks the user for their name and age, then prints the following message:
-```bash
+```shell
 Hello, [name]! You are [age] years old.
 ```
 
@@ -111,7 +111,7 @@ Write a program that takes two numbers from the user and prints:
 
 ### Task 3: Temperature Converter
 Write a Python program that converts temperature from Celsius to Fahrenheit. The formula to convert is:
-```bash
+```shell
 Fahrenheit = (Celsius * 9/5) + 32
 ```
 
