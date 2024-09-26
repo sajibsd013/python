@@ -28,11 +28,5 @@ Country: USA
 ```
 - Use multiple `print()` functions or escape characters.
 
-## How to Submit
-
-1. Complete the assignments by modifying the `output_operations_assignments.py` file.
-2. Save your changes.
-3. Submit the `.py` file via email or upload it to the designated submission platform.
-
 ### _Happy learning!_
 
