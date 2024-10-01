@@ -1,8 +1,4 @@
-# Python Output Operations Assignments
-
-This repository contains three simple Python assignments related to output operations. The tasks involve basic print statements, string formatting, and printing multiple lines of information.
-
-## Assignments
+# Assignment 1
 
 ### 1. **Displaying Simple Messages in Python**
 Write a Python program that prints the following:

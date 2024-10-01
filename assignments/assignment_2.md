@@ -1,6 +1,4 @@
-# Python Simple Data Types Assignments
-
-## Assignments
+# Assignment 2
 
 ### 1. **Integer and Float Operations**
 Write a Python script that performs basic arithmetic operations (addition, subtraction, multiplication, and division) on two integers and two floats. You should print the result of each operation.

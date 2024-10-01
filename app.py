@@ -1,9 +1,33 @@
-#Assinment no 1
-print('Hello, World!\nWelcome to Python Programming')
+a = 12
+b = 3
+c = a + b
+d = a - b
+e = a * b
+f = a / b
+print(c)
+print(d)
+print(e)
+print(f)
 
+A = 3.5
+B = 2.5
+C = A + B
+D = A - B
+E = A * B
+F = A / B
+print(C)
+print(D)
+print(E)
+print(F)
 
-#Assignment no 2
-print(f'my name is john, and i am {25} years old')
+m = int(input())
+n = int(input())
+o = int(m / n)
+p = m % n
+print("Quotient:",o)
+print("Remainder:",p)
 
-#Assignment no 3
-print('name: Alice\nAge: 30\ncountry: USA')
+q = str(7)
+r = int(q)
+output = r ** 2
+print("Square:",output)
