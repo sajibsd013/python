@@ -1,11 +1,10 @@
 #  Python Data Structure-Lists
 
 ## Table of Contents
-1. [Basic Operators in Python](#basic-operators-in-python)
-2. [Lists](#lists)
-3. [Operations on Lists](#operations-on-lists)
-4. [Lists in Advanced Applications](#lists-in-advanced-applications)
-5. [Programming Tasks](#programming-tasks)
+1. [Basic Operators in Python](#1-basic-operators-in-python)
+2. [Lists](#2-lists)
+3. [Operations on Lists](#3-operations-on-lists)
+4. [Lists in Advanced Applications](#4-lists-in-advanced-applications)
 
 ---
 

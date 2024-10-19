@@ -1,13 +1,13 @@
 # Program Control Flow - 2
 
 ## Table of Contents
-1. [Loops](#loops)
-2. [Logical Operators](#logical-operators)
-3. [Programming Tasks](#programming-tasks)
+
+1. [Loops](#1-loops)
+2. [Logical Operators](#2-logical-operators)
 
 ---
 
-## 1. Loops
+## 1.Loops
 
 Loops are used to repeat a block of code multiple times. In Python, there are two main types of loops: `for` and `while`.
 
