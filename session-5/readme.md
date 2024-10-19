@@ -2,9 +2,6 @@
 
 ## Table of Contents
 1. [Loops](#loops)
-    - [For Loop](#for-loop)
-    - [While Loop](#while-loop)
-    - [Nested Loops](#nested-loops)
 2. [Logical Operators](#logical-operators)
 3. [Programming Tasks](#programming-tasks)
 
