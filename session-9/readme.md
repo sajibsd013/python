@@ -58,7 +58,18 @@ print("Outside function:", x)  # Output: Outside function: 10
 ```
 
 ### Using `global` and `nonlocal` Keywords:
-The `global` keyword allows access to a global variable inside a function. The `nonlocal` keyword is used in nested functions to access variables from the outer function’s scope.
+The `global` keyword allows access to a global variable inside a function. 
+```python
+x = 10  # Global variable
+
+def modify_global():
+    global x
+    x = 20  # Modifies the global variable `x`
+
+modify_global()
+print(x)  # Output: 20
+```
+The `nonlocal` keyword is used in nested functions to access variables from the outer function’s scope.
 
 ```python
 def outer_function():
