@@ -114,7 +114,53 @@ print(factorial(5))  # Output: 120 (5 * 4 * 3 * 2 * 1)
 - Can lead to high memory usage if the recursion depth is too large.
 - May cause stack overflow errors if the base case is not well-defined.
 
+Here are a few tasks to practice recursion in Python, covering different types of problems such as mathematical operations, list processing, and string manipulation.
+
 ---
+
+### Task: Factorial of a Number
+
+Calculate the factorial of a number `n`, denoted as `n!`. This is the product of all positive integers up to `n`.
+
+#### Problem:
+Write a recursive function `factorial(n)` that returns `n!`.
+
+#### Example:
+```python
+factorial(5)  # Output: 120 (5 * 4 * 3 * 2 * 1)
+```
+
+---
+
+### Task: Fibonacci Sequence
+
+The Fibonacci sequence is a series where each number is the sum of the two preceding ones. Starting from 0 and 1, the sequence goes: `0, 1, 1, 2, 3, 5, 8, ...`.
+
+#### Problem:
+Write a recursive function `fibonacci(n)` that returns the `n`-th Fibonacci number.
+
+#### Example:
+```python
+fibonacci(5)  # Output: 5 (sequence: 0, 1, 1, 2, 3, 5)
+```
+
+---
+
+### Task: Sum of a List
+
+Calculate the sum of all elements in a list of integers.
+
+#### Problem:
+Write a recursive function `sum_of_list(lst)` that returns the sum of a list `lst`.
+
+#### Example:
+```python
+sum_of_list([1, 2, 3, 4, 5])  # Output: 15
+```
+
+
+---
+
 
 
 ### _Happy learning!_
