@@ -53,6 +53,170 @@ account2.withdraw(100)
 
 ---
 
+Certainly! Here’s an example of each of the four core principles of Object-Oriented Programming (OOP): Encapsulation, Abstraction, Inheritance, and Polymorphism. Each example will include an explanation of the concept, code, and details.
+
+---
+
+### 1. Encapsulation
+**Encapsulation** is the practice of bundling data (attributes) and methods (functions) within a class and restricting direct access to some components to protect the internal state.
+
+Encapsulation is often achieved by making attributes private (with a preceding underscore or double underscore) and providing public getter and setter methods.
+
+#### Example: Encapsulated Bank Account
+```python
+class BankAccount:
+    def __init__(self, account_holder, balance=0):
+        self.account_holder = account_holder
+        self.__balance = balance  # Private attribute
+
+    def deposit(self, amount):
+        if amount > 0:
+            self.__balance += amount
+            print(f"{amount} deposited. New balance: {self.__balance}")
+
+    def withdraw(self, amount):
+        if 0 < amount <= self.__balance:
+            self.__balance -= amount
+            print(f"{amount} withdrawn. New balance: {self.__balance}")
+        else:
+            print("Insufficient funds or invalid amount.")
+
+    def get_balance(self):
+        return self.__balance  # Public method to access the private attribute
+
+# Usage
+account = BankAccount("Alice", 1000)
+account.deposit(500)
+print("Balance:", account.get_balance())
+```
+
+**Explanation**:
+- The `__balance` attribute is private, meaning it can’t be accessed directly from outside the class.
+- The `deposit`, `withdraw`, and `get_balance` methods are used to interact with `__balance` safely.
+- This prevents direct modifications to `__balance`, ensuring data integrity and controlled access.
+
+---
+
+### 2. Abstraction
+**Abstraction** is the concept of hiding the internal implementation details and exposing only the necessary parts of an object. In Python, abstraction is often achieved using abstract classes and methods, where only the essential details are defined, leaving specific implementations to subclasses.
+
+#### Example: Abstract Payment System
+```python
+from abc import ABC, abstractmethod
+
+class Payment(ABC):
+    @abstractmethod
+    def process_payment(self, amount):
+        pass
+
+class CreditCardPayment(Payment):
+    def process_payment(self, amount):
+        print(f"Processing credit card payment of ${amount}")
+
+class PayPalPayment(Payment):
+    def process_payment(self, amount):
+        print(f"Processing PayPal payment of ${amount}")
+
+# Usage
+payment1 = CreditCardPayment()
+payment1.process_payment(100)
+
+payment2 = PayPalPayment()
+payment2.process_payment(200)
+```
+
+**Explanation**:
+- The `Payment` class is an abstract base class with an abstract method `process_payment`.
+- `CreditCardPayment` and `PayPalPayment` inherit from `Payment` and provide their own implementations of `process_payment`.
+- Users of the `Payment` class don’t need to know the specifics of how each payment is processed, achieving abstraction.
+
+---
+
+### 3. Inheritance
+**Inheritance** allows a class (child class) to inherit attributes and methods from another class (parent class), promoting code reuse and a hierarchical structure.
+
+#### Example: Inheritance in Vehicle Classes
+```python
+class Vehicle:
+    def __init__(self, make, model):
+        self.make = make
+        self.model = model
+
+    def display_info(self):
+        print(f"Vehicle: {self.make} {self.model}")
+
+class Car(Vehicle):
+    def __init__(self, make, model, doors):
+        super().__init__(make, model)
+        self.doors = doors
+
+    def display_info(self):
+        super().display_info()
+        print(f"Doors: {self.doors}")
+
+class Motorcycle(Vehicle):
+    def __init__(self, make, model, engine_cc):
+        super().__init__(make, model)
+        self.engine_cc = engine_cc
+
+    def display_info(self):
+        super().display_info()
+        print(f"Engine: {self.engine_cc} cc")
+
+# Usage
+car = Car("Toyota", "Camry", 4)
+motorcycle = Motorcycle("Harley-Davidson", "Iron 883", 883)
+
+car.display_info()
+motorcycle.display_info()
+```
+
+**Explanation**:
+- `Vehicle` is the parent class with attributes `make` and `model` and a method `display_info`.
+- `Car` and `Motorcycle` are child classes that inherit from `Vehicle` and add their own specific attributes (`doors` for `Car` and `engine_cc` for `Motorcycle`).
+- Each subclass overrides the `display_info` method to include their additional information.
+- This structure promotes reuse of common attributes and methods from `Vehicle` and allows subclasses to add their specific details.
+
+---
+
+### 4. Polymorphism
+**Polymorphism** is the ability to use a single interface for different underlying forms (data types). In OOP, polymorphism allows you to define a method in the parent class, and each subclass can have a different implementation of that method.
+
+#### Example: Polymorphic Animals
+```python
+class Animal:
+    def speak(self):
+        pass
+
+class Dog(Animal):
+    def speak(self):
+        return "Woof!"
+
+class Cat(Animal):
+    def speak(self):
+        return "Meow!"
+
+class Bird(Animal):
+    def speak(self):
+        return "Chirp!"
+
+# Usage
+animals = [Dog(), Cat(), Bird()]
+for animal in animals:
+    print(animal.speak())
+```
+
+---
+
+| OOP Concept        | Explanation                                                                                       | Code Example                    |
+|--------------------|---------------------------------------------------------------------------------------------------|---------------------------------|
+| **Encapsulation**  | Bundling data and methods inside a class, restricting direct access to certain attributes.       | Private attributes and getters. |
+| **Abstraction**    | Hiding complex implementation details, exposing only what is necessary.                          | Abstract classes and methods.   |
+| **Inheritance**    | Creating a new class based on an existing class, promoting code reuse and a class hierarchy.     | Parent and child classes.       |
+| **Polymorphism**   | Using a single interface for different types, allowing methods to behave differently across types.| Method overriding in subclasses.|
+
+These examples illustrate the key principles of OOP in Python, which can help in building organized, reusable, and scalable code. Each concept plays a crucial role in how object-oriented design supports effective software development.
+
 ## 2. A Short Journey from Procedural to Object-Oriented Approach
 
 In procedural programming, you might write code as a series of functions and statements. While this approach works well for smaller tasks, it can become difficult to maintain for larger projects. OOP helps manage complexity by organizing code into classes and objects.
@@ -105,54 +269,7 @@ print("Updated Grade:", student1.get_grade())
 ### Key Differences
 - **Encapsulation**: The `Student` class encapsulates data (`name`, `age`, and `grade`) and methods (`get_grade` and `set_grade`) in a single structure, making it easier to manage.
 - **Code Organization**: In OOP, related functionality is grouped together, improving code readability and maintainability.
-
 ---
-
-## Moving Forward with OOP Concepts
-
-### Encapsulation Example
-Encapsulation allows us to control access to the attributes and hide unnecessary details.
-
-```python
-class EncapsulatedBankAccount:
-    def __init__(self, account_holder, balance=0):
-        self.account_holder = account_holder
-        self.__balance = balance  # Private attribute
-
-    def deposit(self, amount):
-        if amount > 0:
-            self.__balance += amount
-            print(f"{amount} deposited. New balance: {self.__balance}")
-
-    def get_balance(self):
-        return self.__balance
-
-# Test Encapsulation
-account = EncapsulatedBankAccount("Alice", 1000)
-print(account.get_balance())  # Access through a method
-```
-
-### Inheritance Example
-Inheritance allows us to define a new class based on an existing class, enhancing code reuse.
-
-```python
-class Animal:
-    def sound(self):
-        pass
-
-class Dog(Animal):
-    def sound(self):
-        return "Woof!"
-
-class Cat(Animal):
-    def sound(self):
-        return "Meow!"
-
-# Polymorphism in action
-animals = [Dog(), Cat()]
-for animal in animals:
-    print(animal.sound())
-```
 
 ### Summary
 - **Procedural Approach**: Useful for simple, small-scale tasks but hard to maintain in complex applications.
