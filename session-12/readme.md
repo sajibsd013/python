@@ -1,6 +1,5 @@
- Object-Oriented Programming (OOP) in Python
+# Object-Oriented Programming (OOP) in Python
 
-Object-Oriented Programming (OOP) is a programming paradigm based on the concept of objects, which are data structures that contain both data (attributes) and functions (methods) that operate on that data. This approach promotes code organization, reuse, and scalability, especially for larger projects.
 
 ## Table of Contents
 1. [The Foundations of OOP](#1-the-foundations-of-oop)
