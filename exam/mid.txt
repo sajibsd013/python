@@ -1,0 +1,20 @@
+1. Write a program that takes two numbers as input and prints their addition, subtraction, multiplication, and division
+2. Create a variable price with any value, calculate a 10% discount on it, and print the discounted price.
+3. Write a Python program to check if a number entered by the user is positive, negative, or zero.
+4. Create a program that takes a number as input and prints whether it’s odd or even.
+5. Write a program to print all even numbers from 1 to 20 using a loop.
+6. Create a list of numbers, then calculate and print the sum of all numbers in the list.
+7. Write a Python program that asks the user for their weight (in kilograms) and height (in meters), and then calculates their Body Mass Index (BMI). Use the formula:
+
+BMI = Weight / (Height ** 2)
+Then classify the BMI result according to the following categories:
+
+BMI < 18.5: Underweight
+18.5 ≤ BMI < 24.9: Normal weight
+25.0 ≤ BMI < 29.9: Overweight
+BMI ≥ 30: Obesity
+8. Write a Python program to add a new key-value pair (e.g., "profession": "Teacher") to an existing dictionary and print the updated dictionary.
+dictionary is,
+person = {"name": "Alice", "age": 30, "city": "New York"}
+9. Write a Python program to find the largest number in a list.
+10. Write a program that removes duplicates from a list
